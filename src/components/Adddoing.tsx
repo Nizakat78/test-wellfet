@@ -23,9 +23,9 @@ const Adddoing = ({ dict }: { dict: any }) => {
         <Image
           src="/logo.png" 
           alt="WellFit"
-          width={80}
-          height={80}
-          className="mx-auto"
+          width={100}
+          height={100}
+           className="rounded-r-full object-contain mx-auto lg:mx-0"
         />
       </div>
 

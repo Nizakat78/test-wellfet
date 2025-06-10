@@ -41,7 +41,7 @@ const Shaping = ({ dict }: { dict: any }) => {
               alt={dict.shaping?.logoAlt || "WellFit Logo"}
               width={100}
               height={100}
-              className="rounded-full object-contain mx-auto lg:mx-0"
+              className="rounded-r-full object-contain mx-auto lg:mx-0"
             />
           </div>
 

@@ -32,7 +32,7 @@ const Contribution = ({ dict }: { dict: any }) => {
               alt="WellFit Logo"
               width={100}
               height={100}
-              className="rounded-full object-contain"
+               className="rounded-r-full mx-auto lg:mx-0"
             />
           </div>
           <h2

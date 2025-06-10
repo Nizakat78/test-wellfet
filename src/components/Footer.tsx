@@ -29,7 +29,7 @@ const Footer = ({ dict }: { dict: any }) => {
           alt="WellFit Logo"
           width={100}
           height={100}
-          className="mx-auto"
+          className="rounded-r-full mx-auto"
         />
       </div>
 

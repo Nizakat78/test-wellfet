@@ -24,9 +24,9 @@ const Insight = ({ dict }: { dict: any }) => {
             <Image
               src="/logo.png"
               alt={dict.insight?.logoAlt || "WellFit Logo"}
-              width={80}
-              height={80}
-              className="mx-auto lg:mx-0"
+              width={100}
+              height={100}
+              className="rounded-r-full mx-auto lg:mx-0"
             />
           </div>
           {/* Title */}

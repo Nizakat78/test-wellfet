@@ -65,7 +65,7 @@ const Navbar: React.FC<{ dict: any, lang: 'en-US' | 'de-ES' }> = ({ dict, lang }
             alt="Logo"
             width={48}
             height={48}
-            className="h-12 w-auto mr-4"
+            className="rounded-r-full h-12 w-auto ml-5"
           />
         </div>
 
