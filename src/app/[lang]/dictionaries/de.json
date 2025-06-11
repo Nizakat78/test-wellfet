@@ -134,18 +134,18 @@
             "milestones": [
               { "label": "Idee gestartet: Tamagotchi-Avatar mit NFT & AR", "done": true },
               { "label": "Q1 – Marktanalyse & Zielgruppenforschung", "done": true },
-              { "label": "Q2 – MVP-Skizzen & erste Mock-ups", "done": false },
-              { "label": "Q3 – Erweiterung der Idee", "done": false },
-              { "label": "Q4 – Technologieauswahl (SUI vs Solana) abschließen", "done": false }
+              { "label": "Q2 – MVP-Skizzen & erste Mock-ups", "done": true },
+              { "label": "Q3 – Erweiterung der Idee", "done": true },
+              { "label": "Q4 – Technologieauswahl (SUI vs Solana) abschließen", "done": true }
             ]
           },
           {
             "quarter": "Phase 2",
             "year": 2025,
             "milestones": [
-              { "label": "Q1 – UI/UX-Design für den Vorverkauf", "done": false },
-              { "label": "Q2 – Blockchain-Integration (Testnet → Mainnet)", "done": false },
-              { "label": "Q2-Q3 – Veröffentlichung des Whitepapers & Community-Aufbau", "done": false },
+              { "label": "Q1 – UI/UX-Design für den Vorverkauf", "done": true },
+              { "label": "Q2 – Blockchain-Integration (Testnet → Mainnet)", "done": true },
+              { "label": "Q2-Q3 – Veröffentlichung des Whitepapers & Community-Aufbau", "done": true },
               { "label": "Q3 – Marketing-Push: Influencer, Social Ads, Krypto-Community", "done": false }
             ]
           },

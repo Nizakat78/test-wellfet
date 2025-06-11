@@ -235,11 +235,40 @@ const FAQDisclosure: React.FC<FAQItem> = ({ q, a }) => (
         <Disclosure.Button className="flex justify-between w-full py-3 text-left text-base font-medium text-gray-800 hover:text-green-600 focus:outline-none">
           <span>{q}</span>
           <ChevronUpIcon
-            className={`w-5 h-5 transform transition-transform duration-200 ${open ? "rotate-180 text-green-600" : "text-gray-500"}`}
+            className={`w-5 h-5 transform transition-transform duration-200 ${
+              open ? "rotate-180 text-green-600" : "text-gray-500"
+            }`}
           />
         </Disclosure.Button>
+
         <Disclosure.Panel className="pb-4 pl-4 text-gray-600 border-l border-green-300">
           {a}
+        </Disclosure.Panel>
+      </>
+    )}
+  </Disclosure>
+);
+
+// ---------------------------------
+// Category (heading + its Q/A list)
+// ---------------------------------
+const CategoryDisclosure: React.FC<FAQCategory> = ({ title, items }) => (
+  <Disclosure as="div" className="shadow-md rounded-lg border border-gray-100">
+    {({ open }) => (
+      <>
+        <Disclosure.Button className="flex justify-between w-full px-6 py-4 bg-green-50 text-lg font-semibold text-green-700 rounded-t-lg focus:outline-none">
+          <span>{title}</span>
+          <ChevronUpIcon
+            className={`w-6 h-6 transform transition-transform duration-200 ${
+              open ? "rotate-180 text-green-600" : "text-green-500"
+            }`}
+          />
+        </Disclosure.Button>
+
+        <Disclosure.Panel className="px-6 py-4 space-y-3 bg-white">
+          {items.map((item) => (
+            <FAQDisclosure key={item.q} {...item} />
+          ))}
         </Disclosure.Panel>
       </>
     )}
@@ -251,7 +280,7 @@ const FAQDisclosure: React.FC<FAQItem> = ({ q, a }) => (
 // ---------------------------------
 const FAQPage: React.FC<FAQProps> = ({ dict }) => {
   const heading = dict?.faq?.heading ?? "Frequently Asked Questions";
-  const categories: FAQCategory[] = dict?.faq?.categories ?? FAQ_DATA;
+  const categories: FAQCategory[] = dict?.faq?.categories ?? [];
 
   return (
     <section id="FAQ" className="bg-white min-h-screen py-12 px-6 sm:px-10">
@@ -259,18 +288,9 @@ const FAQPage: React.FC<FAQProps> = ({ dict }) => {
         {heading}
       </h1>
 
-      <div className="max-w-3xl mx-auto space-y-10">
+      <div className="max-w-3xl mx-auto space-y-6">
         {categories.map((cat) => (
-          <div key={cat.title} className="shadow-md rounded-lg border border-gray-100">
-            <h2 className="bg-green-50 px-6 py-4 text-lg font-semibold text-green-700 rounded-t-lg">
-              {cat.title}
-            </h2>
-            <div className="px-6 py-4 space-y-3">
-              {cat.items.map((item) => (
-                <FAQDisclosure key={item.q} {...item} />
-              ))}
-            </div>
-          </div>
+          <CategoryDisclosure key={cat.title} {...cat} />
         ))}
       </div>
     </section>
