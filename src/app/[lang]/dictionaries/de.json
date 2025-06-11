@@ -108,21 +108,365 @@
         "button": "WellFit jetzt"
       },
       "presale": {
-    "title": "Kaufe, bevor der Preis steigt!",
-    "countdownText": "BIS ZUM NÄCHSTEN PREISANSTIEG",
-    "wftPriceLabel": "1 $WFT:",
-    "currentPriceLabel": "Aktueller Preis:",
-    "afterPriceLabel": "Nach dem Preis:",
-    "raisedLabel": "Über 473177 $/600000 $ USD gesammelt!",
-    "buyNow": "Kaufe jetzt $WFT",
-    "payWith": "Bezahle mit",
-    "receive": "Erhalte $Well Fit",
-    "walletConnected": "Wallet verbunden",
-    "connectWallet": "Wallet verbinden",
-    "buyNowButton": "Jetzt kaufen",
-    "howToBuy": "Wie kauft man?",
-    "clickHere": "(Klicke hier)",
-    "footerText": "Dein TMT Token Vorverkauf"
-  }
+        "title": "Kaufe, bevor der Preis steigt!",
+        "countdownText": "BIS ZUM NÄCHSTEN PREISANSTIEG",
+        "wftPriceLabel": "1 $WFT:",
+        "currentPriceLabel": "Aktueller Preis:",
+        "afterPriceLabel": "Nach dem Preis:",
+        "raisedLabel": "Über 473177 $/600000 $ USD gesammelt!",
+        "buyNow": "Kaufe jetzt $WFT",
+        "payWith": "Bezahle mit",
+        "receive": "Erhalte $Well Fit",
+        "walletConnected": "Wallet verbunden",
+        "connectWallet": "Wallet verbinden",
+        "buyNowButton": "Jetzt kaufen",
+        "howToBuy": "Wie kauft man?",
+        "clickHere": "(Klicke hier)",
+        "footerText": "Dein TMT Token Vorverkauf"
+      },
+      "roadmap": {
+        "heading": "🚀 WellFit Fahrplan",
+        "subHeading": "Highlights",
+        "phases": [
+          {
+            "quarter": "Phase 1",
+            "year": 2024,
+            "milestones": [
+              { "label": "Idee gestartet: Tamagotchi-Avatar mit NFT & AR", "done": true },
+              { "label": "Q1 – Marktanalyse & Zielgruppenforschung", "done": true },
+              { "label": "Q2 – MVP-Skizzen & erste Mock-ups", "done": false },
+              { "label": "Q3 – Erweiterung der Idee", "done": false },
+              { "label": "Q4 – Technologieauswahl (SUI vs Solana) abschließen", "done": false }
+            ]
+          },
+          {
+            "quarter": "Phase 2",
+            "year": 2025,
+            "milestones": [
+              { "label": "Q1 – UI/UX-Design für den Vorverkauf", "done": false },
+              { "label": "Q2 – Blockchain-Integration (Testnet → Mainnet)", "done": false },
+              { "label": "Q2-Q3 – Veröffentlichung des Whitepapers & Community-Aufbau", "done": false },
+              { "label": "Q3 – Marketing-Push: Influencer, Social Ads, Krypto-Community", "done": false }
+            ]
+          },
+          {
+            "quarter": "Phase 3",
+            "year": 2026,
+            "milestones": [
+              { "label": "Q1 – Beta-Release der App für Testnutzer", "done": false },
+              { "label": "Q2 – Start des WellFit-Marktplatzes (NFTs, Rewards)", "done": false },
+              { "label": "Q3 – Vorbereitung der WFT-Börsennotierung", "done": false },
+              { "label": "Q4 – Einführung von AR-Funktionen", "done": false }
+            ]
+          }
+        ],
+        "footerNote": "Dieser Fahrplan kann sich ändern, wenn wir wachsen und uns an die Bedürfnisse der Community und neue Technologien anpassen."
+      },
+      "faq": {
+            "heading": "Häufig gestellte Fragen",
+            "categories": [
+              {
+                "title": "Allgemeines über WellFit",
+                "items": [
+                  {
+                    "q": "Was ist WellFit?",
+                    "a": "WellFit ist eine Plattform, die Gesundheit, Technologie und Bildung kombiniert. Nutzer verdienen durch Bewegung, Lernen und soziale Interaktionen Tokens, die gegen NFTs, virtuelle Inhalte oder Plattformfeatures eingelöst werden können."
+                  },
+                  {
+                    "q": "Was macht WellFit besonders?",
+                    "a": "Die Kombination aus Gamification, Blockchain (Solana) und Bildung macht WellFit einzigartig. Nutzer erleben virtuelle Avatare, interaktive Erlebnisse und ein Belohnungssystem, das sie für gesunde Aktivitäten motiviert."
+                  },
+                  {
+                    "q": "Welche Technologien nutzt WellFit?",
+                    "a": "WellFit nutzt Solana-Blockchain, KI, AR und Gamification-Elemente."
+                  },
+                  {
+                    "q": "Wie kann ich Teil der WellFit-Community werden?",
+                    "a": "Indem du dich auf der Plattform registrierst, an Challenges teilnimmst und deinen Avatar entwickelst."
+                  }
+                ]
+              },
+              {
+                "title": "Blockchain und Tokens",
+                "items": [
+                  {
+                    "q": "Warum verwendet WellFit die Solana-Blockchain?",
+                    "a": "Solana bietet hohe Geschwindigkeit, niedrige Transaktionskosten und ist umweltfreundlich – ideal für Mikrotransaktionen im WellFit-System."
+                  },
+                  {
+                    "q": "Was sind WellFit-Tokens und wie funktionieren sie?",
+                    "a": "Tokens werden für Aktivitäten wie Bewegung, Lernen und Avatarpflege verdient und können für NFTs, digitale Inhalte und exklusive Funktionen eingelöst werden."
+                  },
+                  {
+                    "q": "Was passiert, wenn man Tokens verliert?",
+                    "a": "Tokens sind in der Blockchain gespeichert. Bei Verlust des Zugangs (z. B. Wallet) gibt es keine Rückerstattung – Sicherheit liegt in der Verantwortung des Nutzers."
+                  }
+                ]
+              },
+              {
+                "title": "Plattform & Roadmap",
+                "items": [
+                  {
+                    "q": "Welche Features werden in Zukunft ergänzt?",
+                    "a": "Staking, NFT-Marktplatz, Bildungschallenges und vollständige Avatar-Anpassung. Die Roadmap beschreibt alle Phasen im Detail."
+                  },
+                  {
+                    "q": "Gibt es einen Zeitplan für neue Funktionen?",
+                    "a": "Ja. Die Roadmap beschreibt Meilensteine bis Ende 2026 – von der Pre-Sale-Phase bis zur Plattformverfügbarkeit."
+                  },
+                  {
+                    "q": "Wann wird WellFit vollständig verfügbar sein?",
+                    "a": "Die Plattform befindet sich in Phase 1 des Pre-Sales. Die erste Verfügbarkeit ist für Ende 2026 geplant."
+                  },
+                  {
+                    "q": "Welche Meilensteine habt ihr bereits erreicht?",
+                    "a": "Tokenomics definiert, Blockchain integriert, Pre-Sale Phase 1 gestartet, Whitepaper veröffentlicht."
+                  }
+                ]
+              },
+              {
+                "title": "NFTs und Gamification",
+                "items": [
+                  {
+                    "q": "Was sind NFTs in WellFit?",
+                    "a": "Einzigartige digitale Sammlerstücke, die z. B. Avatare freischalten, Belohnungen bieten oder den Zugang zu exklusiven Inhalten ermöglichen."
+                  },
+                  {
+                    "q": "Wie funktionieren die Avatare in WellFit?",
+                    "a": "Avatare sind virtuelle Begleiter, die mit Aktivität wachsen, neue Fähigkeiten erlernen und für Quests eingesetzt werden können."
+                  },
+                  {
+                    "q": "Wie motiviert WellFit Nutzer zur Aktivität?",
+                    "a": "Durch tägliche, wöchentliche und monatliche Challenges, ein Levelsystem, Token-Belohnungen und soziale Wettbewerbe."
+                  }
+                ]
+              },
+              {
+                "title": "NFTs und Tokenomics",
+                "items": [
+                  {
+                    "q": "Was sind WellFit-Tokens und wie kann ich sie verdienen?",
+                    "a": "WellFit-Tokens sind die interne Währung der Plattform. Du erhältst sie durch Schritte, Fitnessaufgaben, das Lösen von Rätseln oder das Erkunden von Orten."
+                  },
+                  {
+                    "q": "Wie kann ich NFTs bei WellFit erwerben?",
+                    "a": "NFTs können durch spezielle Challenges verdient oder mit WellFit-Tokens gekauft werden. Sie bieten Vorteile wie seltene Avatare oder Zugang zu Bonus-Inhalten."
+                  },
+                  {
+                    "q": "Können Tokens gehandelt werden?",
+                    "a": "Ja. Sobald der Marktplatz live ist, können Nutzer ihre Tokens kaufen (wir starten mit 1 € pro Token, solange er nicht gelistet ist), verkaufen oder untereinander tauschen."
+                  },
+                  {
+                    "q": "Warum sollte ich WellFit-Tokens besitzen?",
+                    "a": "Tokens ermöglichen den Zugang zu exklusiven Funktionen, Käufen von NFTs und Premium-Inhalten. Frühkäufer profitieren von besseren Staking-Boni und Beta-Zugängen."
+                  }
+                ]
+              },
+              {
+                "title": "Marketing & Influencer",
+                "items": [
+                  {
+                    "q": "Wie kann ich WellFit als Influencer unterstützen?",
+                    "a": "Du kannst Inhalte erstellen, deine Community zu Challenges motivieren oder Gewinnspiele durchführen. Dafür gibt es Token-Belohnungen und langfristige Kooperationen."
+                  },
+                  {
+                    "q": "Gibt es exklusive Inhalte oder Angebote für Influencer?",
+                    "a": "Ja. Influencer erhalten frühzeitigen Zugang, OG-Badges, spezielle Token und NFTs. Inhalte werden auf den Stil der Community angepasst."
+                  },
+                  {
+                    "q": "Können Influencer an der Weiterentwicklung mitwirken?",
+                    "a": "Absolut. Wir schätzen Feedback und laden Influencer zu Beta-Tests oder Feature-Diskussionen ein."
+                  }
+                ]
+              },
+              {
+                "title": "Influencer & Marketing",
+                "items": [
+                  {
+                    "q": "Wie kann ich als Influencer mit WellFit zusammenarbeiten?",
+                    "a": "WellFit bietet Influencern Token-Pakete, kreative Freiheit und Zugang zu exklusiven Inhalten für ihre Community."
+                  },
+                  {
+                    "q": "Welche Inhalte erwartet ihr von Influencern?",
+                    "a": "Kreative Beiträge, Challenges, Erfahrungsberichte oder Hinter-den-Kulissen-Videos – angepasst an den Stil des Influencers."
+                  }
+                ]
+              },
+              {
+                "title": "Nachhaltigkeit & Ethik",
+                "items": [
+                  {
+                    "q": "Wie nachhaltig ist WellFit?",
+                    "a": "Durch Solana-Blockchain mit niedrigem Energieverbrauch und Inhalte in Natur & Parks wird Umweltbewusstsein gestärkt."
+                  },
+                  {
+                    "q": "Wie unterstützt WellFit Umweltziele?",
+                    "a": "Durch Bewegung in Parks und Natur. Zusätzlich setzen wir auf die energieeffiziente Solana-Blockchain."
+                  },
+                  {
+                    "q": "Wie stellt ihr ethisches Gamification sicher?",
+                    "a": "Durch Tageslimits, Lerninhalte und Fokus auf gesunde Gewohnheiten statt Endlosnutzung."
+                  },
+                  {
+                    "q": "Wie schützt ihr Nutzerdaten?",
+                    "a": "Modernste Verschlüsselung, nur notwendige Daten werden gespeichert, keine Weitergabe an Dritte."
+                  }
+                ]
+              },
+              {
+                "title": "Investition & Monetarisierung",
+                "items": [
+                  {
+                    "q": "Wie verdient WellFit Geld?",
+                    "a": "Durch Tokenverkäufe, NFT-Handel, Premium-Abos, Unternehmenspartnerschaften, Werbeeinnahmen & Event-Gamification."
+                  },
+                  {
+                    "q": "Was bringt mir eine Investition?",
+                    "a": "Frühinvestoren erhalten Token zum Vorzugspreis, NFTs, Staking-Rewards, exklusive App-Rechte & Zugang zur Beta."
+                  }
+                ]
+              },
+              {
+                "title": "Finanzen & Investment",
+                "items": [
+                  {
+                    "q": "Wie ist die Tokenverteilung geplant?",
+                    "a": "Tokens werden für Entwicklung, Marketing, Community, Team und Pre-Sales aufgeteilt – wie im Whitepaper dargestellt."
+                  },
+                  {
+                    "q": "Wann kann ich Tokens handeln oder verkaufen?",
+                    "a": "Nach dem Launch des Marktplatzes in Phase 3. Durch die interne Community erhalten Frühkäufer Vorabinformationen."
+                  },
+                  {
+                    "q": "Wie wird meine Investition im Pre-Sale verwendet?",
+                    "a": "Zur Entwicklung der App und dem Community-Aufbau. Investoren ermöglichen den Kern der Plattform."
+                  },
+                  {
+                    "q": "Welche Rendite kann ich erwarten?",
+                    "a": "Das hängt von der Nutzung und Marktdurchdringung ab. Frühinvestoren profitieren von Rabattpreisen."
+                  }
+                ]
+              },
+              {
+                "title": "Zielgruppen & Community",
+                "items": [
+                  {
+                    "q": "Für wen ist WellFit geeignet?",
+                    "a": "Für alle Altersgruppen – von Kindern über Familien bis Senioren, Bildungseinrichtungen und Unternehmen (z. B. Corporate Wellness)."
+                  },
+                  {
+                    "q": "Können Menschen mit Behinderung WellFit nutzen?",
+                    "a": "Ja. Es gibt barrierefreie Funktionen und anpassbare Challenges für verschiedenste Bedürfnisse."
+                  }
+                ]
+              },
+              {
+                "title": "Zielgruppen – Kinder & Eltern",
+                "items": [
+                  {
+                    "q": "Ist WellFit für Kinder sicher?",
+                    "a": "Ja, WellFit bietet kindgerechte Inhalte mit Sprachsteuerung, Leseförderung und spielerischer Bewegung. Eltern können über die App Nutzungszeiten und Inhalte überwachen."
+                  },
+                  {
+                    "q": "Welche Funktionen bietet WellFit für Kinder?",
+                    "a": "Kinder können ihrem Avatar vorlesen, Bewegungsspiele spielen und Lesepunkte sammeln. Durch Feedback und Tokens werden sie spielerisch zum Lernen motiviert."
+                  }
+                ]
+              },
+              {
+                "title": "Zielgruppen – Senioren",
+                "items": [
+                  {
+                    "q": "Wie unterstützt WellFit ältere Menschen?",
+                    "a": "Senioren erhalten altersgerechte Challenges wie Gehen, Stretching oder Museumsbesuche. WellFit motiviert durch soziale Gruppen, Tokens und virtuelle Touren."
+                  },
+                  {
+                    "q": "Welche Geräte können Senioren nutzen?",
+                    "a": "WellFit funktioniert mit Smartphones, Tablets oder Fitnessarmbändern. Alternativ kann die Aktivität auch manuell eingegeben werden."
+                  }
+                ]
+              },
+              {
+                "title": "Zielgruppen – Unternehmen & Bildung",
+                "items": [
+                  {
+                    "q": "Wie kann WellFit im Unternehmen eingesetzt werden?",
+                    "a": "WellFit eignet sich für Corporate-Wellness-Programme, um Mitarbeiter zu mehr Bewegung und Gesundheit zu motivieren. Unternehmen profitieren von geringeren Fehlzeiten und besserem Teamgeist."
+                  },
+                  {
+                    "q": "Was bietet WellFit für Schulen?",
+                    "a": "Schulen können Bewegung, digitale Bildung und gesunde Ernährung mit WellFit kombinieren. Die Plattform unterstützt Lehrer mit Quests, Gamification und AR-Features."
+                  }
+                ]
+              },
+              {
+                "title": "Nutzer-Erfahrung & Technik",
+                "items": [
+                  {
+                    "q": "Was passiert, wenn ich meinen Avatar nicht pflege?",
+                    "a": "Der Avatar verliert Energie und wird traurig. Bei längerer Inaktivität kann er zur Adoption freigegeben werden. Pflege und Aktivität bringen jedoch neue Belohnungen."
+                  },
+                  {
+                    "q": "Kann ich Freunde einladen und gemeinsam spielen?",
+                    "a": "Ja, du kannst Freunde einladen, Gruppen gründen und gemeinsam an Herausforderungen teilnehmen. Es gibt Wettbewerbe und Bestenlisten."
+                  },
+                  {
+                    "q": "Wie funktionieren AR-Erlebnisse bei WellFit?",
+                    "a": "Nutzer können Avatare in Parks, Museen oder Zoos sehen und mit ihnen interagieren. QR-Codes und GPS schalten neue Inhalte frei."
+                  }
+                ]
+              },
+              {
+                "title": "Sicherheit & Ethik",
+                "items": [
+                  {
+                    "q": "Wie verhindert ihr Suchtverhalten durch Gamification?",
+                    "a": "Es gibt tägliche Limits, Pausenfunktionen und pädagogische Inhalte. WellFit fördert bewusstes Spielen statt endloser Wiederholung."
+                  },
+                  {
+                    "q": "Was passiert mit inaktiven Nutzern?",
+                    "a": "Nach längerer Inaktivität erinnern wir per Push-Nachricht oder E-Mail. Tokens und Fortschritte bleiben erhalten, können aber nicht genutzt werden, solange keine Aktivität erfolgt, Avatare können davonlaufen."
+                  }
+                ]
+              },
+              {
+                "title": "Technische Fragen",
+                "items": [
+                  {
+                    "q": "Welche Geräte brauche ich für WellFit?",
+                    "a": "Ein Smartphone reicht aus. Fitnessarmbänder und optionale Wearables sind empfohlen, aber nicht zwingend notwendig."
+                  },
+                  {
+                    "q": "Wann wird der Marktplatz live geschaltet?",
+                    "a": "Der digitale Marktplatz wird in Phase 3 der Roadmap veröffentlicht – voraussichtlich Mitte 2026."
+                  }
+                ]
+              },
+              {
+                "title": "Nutzererfahrung",
+                "items": [
+                  {
+                    "q": "Gibt es Erfahrungsberichte von Nutzern?",
+                    "a": "Nein, bisher nur Umfragen – diese zeigen jedoch großen Zuspruch."
+                  },
+                  {
+                    "q": "Welche Geräte sind mit WellFit kompatibel?",
+                    "a": "WellFit funktioniert mit Smartphones, Tablets und vielen Fitness-Trackern. Aktivitäten können auch manuell eingegeben werden."
+                  },
+                  {
+                    "q": "Ist WellFit für Anfänger geeignet?",
+                    "a": "Ja. Die App ist so gestaltet, dass sie für alle Fitnesslevel funktioniert – ob Einsteiger oder Fortgeschrittene."
+                  },
+                  {
+                    "q": "Kann ich meine Fortschritte mit Freunden teilen?",
+                    "a": "Ja. Du kannst Freunde einladen, Gruppen bilden und gemeinsam an Challenges teilnehmen. Es gibt Ranglisten und soziale Features."
+                  }
+                ]
+              }
+            ]
+          }
+
+
+
     
 }

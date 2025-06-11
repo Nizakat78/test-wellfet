@@ -53,7 +53,6 @@ const Navbar: React.FC<{ dict: any, lang: 'en-US' | 'de-ES' }> = ({ dict, lang }
   const presaleLink = `/${selectedLang}/Presale`;
   
   const whitepaperFileLink = `/${selectedLang}/Whitepaper`;
-  const roadmapFileLink = `/${selectedLang}/Roadmap`;
 
   return (
     <header className="bg-black text-white shadow-lg fixed w-full top-0 left-0 z-20">
@@ -143,6 +142,15 @@ const Navbar: React.FC<{ dict: any, lang: 'en-US' | 'de-ES' }> = ({ dict, lang }
           >
             {dict.nav?.investment || "INVESTMENT"}
           </Link>
+          <Link
+            href="#Roadmap"
+            className="block md:inline hover:text-green-400"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            onClick={closeMobileMenu} // Close mobile menu when a link is clicked
+          >
+            {dict.nav?.roadmap || "ROADMAP"}
+          </Link>
           {/* Dynamic Whitepaper Link */}
           <Link
             href={whitepaperFileLink}
@@ -153,17 +161,6 @@ const Navbar: React.FC<{ dict: any, lang: 'en-US' | 'de-ES' }> = ({ dict, lang }
             onClick={closeMobileMenu} // Close mobile menu when a link is clicked
           >
             {dict.nav?.whitepaper || "WHITEPAPER"}
-          </Link>
-          {/* Dynamic Roadmap Link */}
-            <Link
-            href={roadmapFileLink}
-            rel="noopener noreferrer"
-            className="block md:inline hover:text-green-400"
-            data-aos="fade-up"
-            data-aos-delay="800"
-            onClick={closeMobileMenu} // Close mobile menu when a link is clicked
-          >
-            {dict.nav?.roadmap || "ROADMAP"}
           </Link>
 
           {/* Mobile View - Language Selector & Buy Now Button */}

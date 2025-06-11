@@ -14,6 +14,7 @@ import { getDictionary } from "./dictionaries"; // Assuming you have a method to
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS CSS
 import Roadmap from "@/components/Roadmap"; // Direct import
+import Faqs from "@/components/Faqs"; // Direct import
 
 export default function Page({
   params,
@@ -69,7 +70,8 @@ export default function Page({
           <Adddoing dict={dict} />
           <Contribution dict={dict} />
           <Shaping dict={dict} />
-          <Roadmap/>
+          <Roadmap dict = {dict}/>
+          <Faqs dict = {dict}/>
           <Joinpresale dict={dict} />
           <Footer dict={dict} />
           
