@@ -15,57 +15,34 @@ interface QuarterSection {
 
 const ROADMAP: QuarterSection[] = [
   {
-    quarter: "Q3",
-    year: 2021,
+    quarter: "Phase 1",
+    year: 2024,
     milestones: [
-      { label: "1st Drop Packs Sale" },
-      { label: "PancakeSwap Listing", icon: "🔥" },
-      { label: "Play2Earn Fantasy Leagues", icon: "⚽🎮" },
-      { label: "Uniswap Listing", icon: "🦄" },
-      { label: "Ethereum Bridge", icon: "🔗" },
-      { label: "Marketplace Live" },
+      { label: "Launch of the idea: Tamagotchi avatar with NFT & AR" },
+      { label: "Q1 - Market analysis & target group research" },
+      { label: "Q2 - MVP sketches & first mockups" },
+      { label: "Q3 - Expansion of the idea" },
+      { label: "Q4 - Finalize technology selection (SUI vs. Solana)" },
     ],
   },
   {
-    quarter: "Q4",
-    year: 2021,
-    milestones: [
-      { label: "Packs Subscription Pool", icon: "📦" },
-      { label: "FEVR Credit Card Gateway", icon: "💳" },
-      { label: "FEVR Staking" },
-      { label: "Polygon Bridge" },
-      { label: "2nd CEX Listing" },
-      { label: "NFT Index" },
-    ],
-  },
-  {
-    quarter: "Q1",
-    year: 2022,
-    milestones: [
-      { label: "FEVR Holders DAO" },
-      { label: "NFT Collection Portfolio" },
-      { label: "Clubs Launchpad" },
-      { label: "NFT P2P Lending" },
-    ],
-  },
-  {
-    quarter: "Q2",
-    year: 2022,
-    milestones: [
-      { label: "NFT Collection Challenges" },
-      { label: "Token Wagering Leagues", icon: "🎯🎮" },
-      { label: "NEW NFT P2E Football Game", icon: "⚽🕹" },
-      { label: "NFT Integration Into Fantasy Leagues" },
-    ],
-  },
-  {
-    quarter: "Q3",
+    quarter: "Phase 2",
     year: 2025,
     milestones: [
-      { label: "TMT Token Listing", icon: "📈" },
-      { label: "Website v2 Launch", icon: "🖥️" },
-      { label: "TMT Staking", icon: "📦" },
-      { label: "TMT Token Burn Event", icon: "🔥" },
+      { label: "Q1 - UI/UX PreeSale design" },
+      { label: "Q2 - Blockchain integration (testnet then mainnet)" },
+      { label: "Q2-Q3 - Launch whitepaper & community building" },
+      { label: "Q3 - Advertising push: influencers, social ads, crypto" },
+    ],
+  },
+  {
+    quarter: "Phase 3",
+    year: 2026,
+    milestones: [
+      { label: "Q1 - Beta release of the app for test users" },
+      { label: "Q2 - Launch WellFit marketplace (NFTs, rewards)" },
+      { label: "Q3 - Prepare for WFT token exchange listing" },
+      { label: "Q4 - Introduce AR functions" },
     ],
   },
 ];
@@ -76,11 +53,8 @@ export default function Roadmap() {
   }, []);
 
   return (
-    <section  className="animated-bg py-20 px-4 text-black overflow-hidden relative">
-
-      {/* Dynamic styles */}
+    <section className="animated-bg py-20 px-4 text-white overflow-hidden relative">
       <style jsx global>{`
-        /* page animated gradient */
         .animated-bg {
           background: linear-gradient(60deg, #0f0c29, #302b63, #0f0c29);
           background-size: 600% 600%;
@@ -91,10 +65,9 @@ export default function Roadmap() {
           50% { background-position: 100% 50%; }
           100% { background-position: 0% 50%; }
         }
-        /* card border + bg animation */
         .glow-green {
           position: relative;
-          border: 2px solid #07ede2; /* green */
+          border: 2px solid #07ede2;
           border-radius: 1rem;
           background: radial-gradient(circle at top left, rgba(50,205,50,0.25), rgba(0,0,0,0.05));
           overflow: hidden;
@@ -124,11 +97,10 @@ export default function Roadmap() {
       `}</style>
 
       <h2 className="text-center text-4xl sm:text-5xl font-extrabold mb-20" data-aos="zoom-in">
-        🚀 Roadmap <span className="text-green-300">Highlights</span>
+        🚀 WellFit Roadmap <span className="text-green-300">Highlights</span>
       </h2>
 
       <div className="relative max-w-6xl mx-auto">
-        {/* timeline line */}
         <div className="absolute left-5 sm:left-1/2 sm:-translate-x-1/2 h-full border-l-2 border-green-400/40" data-aos="fade-down" />
 
         <ul className="space-y-16 sm:space-y-24">
@@ -136,9 +108,7 @@ export default function Roadmap() {
             const isRight = idx % 2 !== 0;
             return (
               <li key={`${section.quarter}-${section.year}`} className="relative sm:flex sm:items-start">
-                {/* dot */}
                 <span className="absolute -left-[10px] sm:left-1/2 sm:-translate-x-1/2 w-5 h-5 rounded-full bg-green-400 border-4 border-gray-900 shadow-lg" data-aos="zoom-in" />
-
                 <div
                   className={`w-full sm:w-1/2 glow-green glow-green-shadow transition-transform duration-300 hover:scale-105 p-6 backdrop-blur-md ${isRight ? "sm:ml-auto sm:text-right" : "sm:mr-auto sm:text-left"}`}
                   data-aos={isRight ? "fade-left" : "fade-right"}
@@ -161,9 +131,8 @@ export default function Roadmap() {
         </ul>
       </div>
 
-      {/* footer */}
       <div className="mt-20 flex justify-center gap-8 text-sm text-green-200" data-aos="fade-up">
-        <span>2021</span><span>|</span><span>2022</span><span>|</span><span>2025</span>
+        <span>2024</span><span>|</span><span>2025</span><span>|</span><span>2026</span>
       </div>
     </section>
   );
