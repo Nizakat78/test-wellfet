@@ -13,6 +13,7 @@ import Footer from "@/components/Footer"; // Direct import
 import { getDictionary } from "./dictionaries"; // Assuming you have a method to fetch the dictionary
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS CSS
+import Roadmap from "@/components/Roadmap"; // Direct import
 
 export default function Page({
   params,
@@ -68,8 +69,10 @@ export default function Page({
           <Adddoing dict={dict} />
           <Contribution dict={dict} />
           <Shaping dict={dict} />
+          <Roadmap/>
           <Joinpresale dict={dict} />
           <Footer dict={dict} />
+          
         </>
       )}
     </div>
