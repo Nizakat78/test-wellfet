@@ -67,12 +67,15 @@ const DEFAULT_ROADMAP: QuarterSection[] = [
 // Expecting dict.roadmap.phases = Array<QuarterSectionLike>
 // Each milestone may optionally include { done }
 // ------------------------------
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const mapDictToRoadmap = (dict: any): QuarterSection[] | null => {
   if (!dict?.roadmap?.phases) return null;
   try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return (dict.roadmap.phases as any[]).map((p: any) => ({
       quarter: p.quarter,
       year: p.year,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       milestones: (p.milestones as any[]).map((m: any) => ({
         label: m.label,
         icon: m.icon,
@@ -87,6 +90,7 @@ const mapDictToRoadmap = (dict: any): QuarterSection[] | null => {
 // ------------------------------
 // Component
 // ------------------------------
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Roadmap({ dict }: { dict?: any }) {
   // pick translated or default roadmap
   const ROADMAP: QuarterSection[] = mapDictToRoadmap(dict) || DEFAULT_ROADMAP;
