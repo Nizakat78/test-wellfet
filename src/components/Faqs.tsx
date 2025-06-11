@@ -1,5 +1,4 @@
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
@@ -16,7 +15,8 @@ interface FAQCategory {
   items: FAQItem[];
 }
 interface FAQProps {
-  dict?: any; // same pattern as Revolution (dict.revolution, dict.faq, ...)
+    
+  dict?: any; 
 }
 const FAQ_DATA: FAQCategory[] = [
   {
