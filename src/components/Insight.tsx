@@ -53,7 +53,7 @@ const Insight = ({ dict }: { dict: any }) => {
             data-aos="fade-up"
             data-aos-delay="600"
           >
-            {dict.insight?.text2 || "Imagine leveraging cutting-edge technologies — from"} <strong>{dict.insight?.ai || "artificial intelligence"}</strong> {" to "}
+            {dict.insight?.text2 || "Imagine leveraging cutting-edge technologies — from"} <strong>{dict.insight?.ai || "artificial intelligence"}</strong> { dict.insight?.text10 || " to "}
             <strong>{dict.insight?.ar || "augmented reality"}</strong> {dict.insight?.enhance || "— that not only expand our knowledge but also significantly enhance our well-being."} <strong>{dict.insight?.wellfit || "WellFit"}</strong> {dict.insight?.movement || "is more than a project; it is a movement redefining how we learn, move, and interact with each other."}
           </p>
           <p
