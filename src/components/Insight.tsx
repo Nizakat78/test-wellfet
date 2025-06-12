@@ -15,7 +15,7 @@ const Insight = ({ dict }: { dict: any }) => {
   }, []); // Empty array ensures it runs only once when the component mounts
 
   return (
-    <div id="Insight" className="container mx-auto px-6 sm:px-9 py-12 sm:py-20">
+    <div id="Insight" className="container mx-auto px-6 sm:px-9 py-12 sm:py-20 border-8 border-white">
       <div className="flex flex-col lg:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden border">
         {/* Content Section */}
         <div className="flex-1 p-6">

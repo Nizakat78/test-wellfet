@@ -15,7 +15,7 @@ const HeroSection = ({ dict }: { dict: any }) => {
   return (
     <section
       id="Hero"
-      className="relative h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative h-screen flex items-center justify-center bg-cover bg-center border-8 border-white"
       style={{
         backgroundImage: "url('/Hero.svg')",
       }}

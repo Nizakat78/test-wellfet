@@ -15,7 +15,7 @@ const Revolution = ({ dict }: { dict: any }) => {
   }, []);
 
   return (
-    <div id="Revolution" className="container mx-auto px-4 py-8">
+    <div id="Revolution" className="container mx-auto px-4 py-8 border-8 border-white">
       <div className="flex flex-col lg:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden border">
         {/* Left Section - Image */}
         <div

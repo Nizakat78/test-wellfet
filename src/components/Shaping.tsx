@@ -16,7 +16,7 @@ const Shaping = ({ dict }: { dict: any }) => {
 
   return (
     <section
-      className="bg-white px-6 py-12 sm:px-12 lg:px-20 lg:py-20 flex flex-col items-center gap-8 rounded-lg"
+      className="bg-white px-6 py-12 sm:px-12 lg:px-20 lg:py-20 flex flex-col items-center gap-8 rounded-lg border-8 border-white"
       data-aos="fade-up" // Adding fade-up animation to the whole section
     >
       <div className="flex flex-col lg:flex-row items-center gap-8">

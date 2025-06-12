@@ -100,7 +100,7 @@ export default function Roadmap({ dict }: { dict?: any }) {
   }, []);
 
   return (
-    <section id="Roadmap" className="animated-bg py-20 px-4 text-white overflow-hidden relative">
+    <section id="Roadmap" className="animated-bg py-20 px-4 text-white overflow-hidden relative border-8 border-white">
       {/* styles remain unchanged */}
       <style jsx global>{`
         .animated-bg {
@@ -156,7 +156,7 @@ export default function Roadmap({ dict }: { dict?: any }) {
           {ROADMAP.map((section, idx) => {
             const isRight = idx % 2 !== 0;
             return (
-              <li key={`${section.quarter}-${section.year}`} className="relative sm:flex sm:items-start">
+              <li key={`${section.quarter}-${section.year}`} className="relative sm:flex sm:items-start ">
                 {/* timeline dot */}
                 <span className="absolute -left-[10px] sm:left-1/2 sm:-translate-x-1/2 w-5 h-5 rounded-full bg-green-400 border-4 border-gray-900 shadow-lg" data-aos="zoom-in" />
 

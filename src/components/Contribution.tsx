@@ -17,7 +17,7 @@ const Contribution = ({ dict }: { dict: any }) => {
   return (
     <section
       id="Contribution"
-      className="bg-white px-6 py-12 sm:px-12 lg:px-20 lg:py-20 flex flex-col items-center gap-8"
+      className="bg-white px-6 py-12 sm:px-12 lg:px-20 lg:py-20 flex flex-col items-center gap-8 border-8 border-white"
     >
       {/* Content Section */}
       <div className="flex flex-col lg:flex-row items-center gap-8">

@@ -55,7 +55,7 @@ const Navbar: React.FC<{ dict: any, lang: 'en-US' | 'de-ES' }> = ({ dict, lang }
   const whitepaperFileLink = `/${selectedLang}/Whitepaper`;
 
   return (
-    <header className="bg-black text-white shadow-lg fixed w-full top-0 left-0 z-20">
+    <header className="bg-black text-white shadow-lg fixed w-full top-0 left-0 z-20 border-r-8 border-white">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div data-aos="fade-down" data-aos-delay="100">
@@ -150,6 +150,15 @@ const Navbar: React.FC<{ dict: any, lang: 'en-US' | 'de-ES' }> = ({ dict, lang }
             onClick={closeMobileMenu} // Close mobile menu when a link is clicked
           >
             {dict.nav?.roadmap || "ROADMAP"}
+          </Link>
+           <Link
+            href="#FAQ"
+            className="block md:inline hover:text-green-400"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            onClick={closeMobileMenu} // Close mobile menu when a link is clicked
+          >
+            {dict.nav?.faq || "FAQ"}
           </Link>
           {/* Dynamic Whitepaper Link */}
           <Link

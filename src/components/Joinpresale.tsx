@@ -16,7 +16,7 @@ const Joinpresale = ({ dict }: { dict: any }) => {
   }, []);
 
   return (
-    <section className="bg-blue-500 mb-11 text-white p-6 sm:p-8 md:p-12 rounded-lg flex flex-col md:flex-row items-center justify-between">
+    <section className="bg-blue-500 mb-11 text-white p-6 sm:p-8 md:p-12 rounded-lg flex flex-col md:flex-row items-center justify-between border-8 border-white" >
       {/* Left Text Section */}
       <div
         className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left"
