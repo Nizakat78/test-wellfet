@@ -102,7 +102,7 @@ const Footer = ({ dict }: { dict: any }) => {
         <input
           type="email"
           placeholder={dict.footer?.emailPlaceholder || "Enter your email address..."}
-          className="px-4 py-2 rounded-full w-full max-w-md border border-gray-400 focus:outline-none focus:ring focus:ring-blue-500"
+          className=" text-black px-4 py-2 rounded-full w-full max-w-md border border-gray-400 focus:outline-none focus:ring focus:ring-blue-500"
         />
         <button
           type="submit"
