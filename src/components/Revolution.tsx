@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS
+import Link from 'next/link';
 
 const Revolution = ({ dict }: { dict: any }) => {
   useEffect(() => {
@@ -65,12 +66,14 @@ const Revolution = ({ dict }: { dict: any }) => {
             <li>{dict.revolution?.support || "Your support helps protect our values ​​and vision"}</li>
           </ul>
 
-          <button
-            className="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition duration-300"
-            data-aos="zoom-in" // Adding a zoom-in effect to the button
-          >
-            {dict.revolution?.button || "WellFit now"}
-          </button>
+          <Link href="/Presale"> {/* 👈 Change '/presale' to your desired route */}
+              <button
+                className="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition duration-300"
+                data-aos="zoom-in"
+              >
+                {dict.revolution?.button || "WellFit now"}
+              </button>
+            </Link>
         </div>
       </div>
     </div>
