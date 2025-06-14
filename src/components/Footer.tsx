@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { FaTwitter } from "react-icons/fa";
-import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { AiFillTikTok } from "react-icons/ai";
-import { FaInstagram } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // AOS CSS
 
@@ -36,7 +34,7 @@ const Footer = ({ dict }: { dict: any }) => {
       {/* Social Media Icons */}
       <div className="flex flex-wrap justify-center items-center gap-6 mb-6" data-aos="fade-up" data-aos-delay="200">
         <a
-          href=""
+          href="https://www.facebook.com/wellfit.now"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-700 hover:text-blue-600 text-2xl"
@@ -45,7 +43,7 @@ const Footer = ({ dict }: { dict: any }) => {
         </a>
 
         <a
-          href=""
+          href="https://x.com/WellFit_now"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:text-blue-400 text-2xl"
@@ -54,39 +52,20 @@ const Footer = ({ dict }: { dict: any }) => {
         </a>
 
         <a
-          href=""
+          href="https://www.linkedin.com/company/wellfit-now"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-700 hover:text-blue-600 text-2xl"
         >
-          <FaInstagram /> {/* Instagram Icon */}
+          <IoLogoLinkedin /> 
         </a>
-
         <a
-          href=""
+          href="https://www.tiktok.com/@wellfit_now"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-700 hover:text-blue-600 text-2xl"
         >
-          <TbBrandYoutubeFilled /> {/* Youtube Icon */}
-        </a>
-
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-700 hover:text-blue-600 text-2xl"
-        >
-          <AiFillTikTok /> {/* TikTok Icon */}
-        </a>
-
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-700 hover:text-blue-600 text-2xl"
-        >
-          <FaTelegram /> {/* Telegram Icon */}
+          <AiFillTikTok />
         </a>
       </div>
 
