@@ -283,7 +283,7 @@ const FAQPage: React.FC<FAQProps> = ({ dict }) => {
   const categories: FAQCategory[] = dict?.faq?.categories ?? [];
 
   return (
-    <section id="FAQ" className="bg-white min-h-screen py-12 px-6 sm:px-10 border-8 border-white">
+    <section id="FAQ" className="bg-white py-12 px-6 sm:px-10 border-8 border-white">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-green-600 mb-12">
         {heading}
       </h1>

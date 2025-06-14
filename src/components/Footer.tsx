@@ -77,19 +77,28 @@ const Footer = ({ dict }: { dict: any }) => {
         {dict.footer?.newsletterDescription || "Stay informed about the upcoming phases of WellFit and the release of our whitepapers!"}
       </p>
 
-      <form className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8" data-aos="fade-up" data-aos-delay="600">
-        <input
-          type="email"
-          placeholder={dict.footer?.emailPlaceholder || "Enter your email address..."}
-          className=" text-black px-4 py-2 rounded-full w-full max-w-md border border-gray-400 focus:outline-none focus:ring focus:ring-blue-500"
-        />
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-400 transition mt-4 sm:mt-0"
+      <form
+          action="https://formspree.io/f/YOUR_FORM_ID" // <-- Replace with your Formspree form ID
+          method="POST"
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
-          {dict.footer?.subscribeButton || "Subscribe"}
-        </button>
-      </form>
+          <input
+            type="email"
+            name="email" // <-- Add name attribute
+            placeholder={dict.footer?.emailPlaceholder || "Enter your email address..."}
+            className="text-black px-4 py-2 rounded-full w-full max-w-md border border-gray-400 focus:outline-none focus:ring focus:ring-blue-500"
+            required // <-- Makes field required
+          />
+          <button
+            type="submit"
+            className="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-400 transition mt-4 sm:mt-0"
+          >
+            {dict.footer?.subscribeButton || "Subscribe"}
+          </button>
+        </form>
+
 
       {/* Copyright Section */}
       <p className="text-gray-400 sm:text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="700">

@@ -16,7 +16,7 @@ const Adddoing = ({ dict }: { dict: any }) => {
   return (
     <div
       id="Adddoing"
-      className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12 sm:px-12 border-8 border-white"
+      className="bg-white flex flex-col items-center px-6 py-12 sm:px-12 border-8 border-white"
     >
       {/* Logo Section */}
       <div className="mb-8">
